@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(16, 16, 22);
+}
+
+
+h1, h2, h3, h4, h5 {
+    color: #fff;
+    text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #0fa,
+    0 0 82px #0fa,
+    0 0 92px #0fa,
+    0 0 102px #0fa,
+    0 0 151px #0fa;
+}
+p {
+    color: #fff;
+    text-shadow:
+    0 0 7px #fff;
+}
+
+header {
+    font-size: 4rem;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.2), 
+        rgba(0, 0, 0, 0.2)
+      ), url(mm.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 10px 0;
+    border-top: 1px white solid;
+    border-bottom: 1px white solid;
+    padding: 0 80px;
+}
+
+
+
+
+
+ul.menu {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+
+ul.menu li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #fff;
+    text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #0fa;
+}
+
+section.main_content {
+    margin-top: 100px;
+}
+
+h1#main-heading {
+    text-align: center;
+    font-size: 36px;
+
+}
+
+section.main_content hr {
+    margin: 20px 0;
+}
+article {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+article#task p#first-p{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-family: monospace;
+}
+
+article#task img {
+    display: block;
+    margin: 0 auto;
+    width: 31rem;
+    height: auto;
+}
+
+article h2 {
+    font-size: 36px;
+}
+article {
+    margin-top: 50px;
+}
+
+article#task p#first-p img {
+    margin: 50px 0;
+    margin-right: 50px;
+}
+
+article#task p#second-p {
+    font-size: 18px;
+    font-family: monospace;
+}
+article#requirements {
+    color: white;
+}
+
+article#requirements p {
+    font-size: 18px;
+    margin-top: 20px;
+}
+article#requirements ul {
+    margin-left: 100px;
+}
+
+article#requirements ul li {
+    color: white;
+}
+p{
+    color: white;
+}
+
+article#submission ul li {
+    color: white;
+    list-style: none;
+}
+
+article#submission img {
+    width: 30rem;
+    display: block;
+    margin: 0 auto;
+}
+
+article#grading {
+    color: white;
+}
+
+table, th, td {
+    border: 1px solid;
+  }
+
+  aside {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  article#deadline {
+    color: red;
+  }
+
+  footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;  
+    border-top: #fff 2px solid;
+    padding: 20px;
+    margin: 20px 0;
+  }
+  
+
+/* while directing cursor teaxt changes color */
+
+.categories ul a, .quick_links ul a{
+ color: white;
+ transition: 0.5s;
+}
+
+.categories ul a:hover, .quick_links  ul a:hover{
+    color: rgb(28, 245, 143);
+   }
+
+   @media (max-width: 1000px) {
+    header {
+        font-size: 3rem;
+    }
+    nav ul.menu {
+        width: 80%;
+        
+    }
+    nav ul.menu li a {
+        font-size: 1.1rem;
+    }
+}
+@media (max-width: 768px){
+    header{
+        font-size: 2rem;
+        height: 200px;
+    }
+    nav {
+        padding: 0 20px;
+    }
+    nav ul.menu {
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+        
+    }
+    p {
+        font-size: 1rem !important;
+    }
+    section 
+    {
+        padding: 0 20px;
+    }
+    article#task img {
+        width: 25rem !important;
+    }
+    article#submission img {
+        width: 25rem !important;
+    }
+}
+
+   @media (max-width: 480px){
+    p {
+        font-size: 0.9rem !important;
+    }
+    article#task img {
+        width: 100% !important;
+    }
+    h1 {
+        font-size: 1.4rem !important;
+    }
+    h2 {
+        font-size: 1.8rem !important;
+    }
+    article#submission img {
+        width: 100% !important;
+    }
+    article ul {
+        margin-left: 2rem !important;
+    }
+    footer {
+        flex-direction: column;
+    }
+    footer div {
+        margin-top: 20px;
+    }
+}
