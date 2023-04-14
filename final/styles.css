@@ -1,0 +1,152 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Montserrat Alternates", sans-serif;
+}
+
+body {
+	background: #f9fafa;
+}
+nav {
+	max-width: 1300px;
+	margin: 0 auto;
+}
+
+nav img {
+	width: 30px;
+	height: 30px;
+	color: #eea302;
+	fill: #eea302;
+}
+
+nav.desktop {
+	padding: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+nav .logo {
+	display: flex;
+	align-items: center;
+}
+
+nav .logo h3 a {
+	text-decoration: none;
+	color: black;
+}
+nav.mobile {
+	display: none;
+}
+
+@media (max-width: 768px) {
+	nav.desktop {
+		display: none;
+	}
+	body {
+		overflow-x: hidden;
+	}
+	nav.mobile {
+		display: flex;
+		justify-content: space-between;
+		padding: 20px;
+	}
+	nav.mobile .nav {
+		width: calc(100vw - 20px);
+		height: 100vh;
+		z-index: 99;
+		transform: translateX(100%);
+		position: fixed;
+		background-color: white;
+		transition: 0.5s;
+	}
+	nav.mobile .hamburger {
+		width: 30px;
+		height: 20px;
+		cursor: pointer;
+	}
+	nav.mobile .hamburger-close {
+		width: 40px;
+		height: 40px;
+		cursor: pointer;
+		margin-bottom: 40px;
+	}
+	nav.mobile .link-wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+	}
+	nav.mobile .link-wrapper a {
+		display: flex;
+		font-size: 1.5rem;
+		margin-bottom: 30px;
+		color: black;
+		font-weight: 600;
+		text-decoration: none;
+	}
+}
+
+.logo h3 {
+	margin-right: 10px;
+	font-size: 1.8rem;
+}
+
+nav.desktop .line {
+	/* width: 100%; */
+	flex: 1;
+	height: 1px;
+	background-color: gray;
+	margin: 0 40px;
+}
+.logo span {
+	font-size: 0.9rem;
+}
+
+nav .nav {
+	display: flex;
+	align-items: center;
+}
+
+nav.desktop .nav a {
+	color: black;
+	text-decoration: none;
+	transition: 0.4s;
+}
+nav.desktop .nav a:hover {
+	text-decoration: underline;
+}
+nav.desktop .nav span {
+	margin: 0 10px;
+}
+
+footer {
+	margin-top: 100px;
+}
+footer .container {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding: 30px;
+}
+footer .container > div {
+	margin-bottom: 20px;
+	margin-right: 10px;
+	font-size: 0.9rem;
+	flex: 1;
+}
+footer .container div div img {
+	width: 30px;
+	height: 30px;
+	margin-right: 20px;
+}
+
+footer .container h4 {
+	margin-bottom: 10px;
+}
+
+footer .container p {
+	font-size: 0.8rem;
+}

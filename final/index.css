@@ -1,0 +1,149 @@
+main {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	padding-top: 100px;
+}
+main .wrapper {
+	display: flex;
+	width: 100%;
+	max-width: 1000px;
+}
+
+.wrapper .left {
+	width: 50%;
+	margin-right: 20px;
+}
+.wrapper .right {
+	width: 50%;
+	margin-left: 20px;
+}
+.wrapper img {
+	width: 100%;
+	height: auto;
+	border-radius: 100%;
+}
+
+.right h1 {
+	font-size: 5rem;
+	margin-bottom: 30px;
+}
+
+.left {
+	border-radius: 100%;
+	background: url(./images/hero.jpg);
+	transition: 0.5s;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100%;
+}
+#two {
+	transition: 0.5s;
+}
+.left:hover {
+	border-radius: 100%;
+	background: url(./images/brand-logo.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.right h2 {
+	font-size: 2.6rem;
+	margin-bottom: 30px;
+}
+
+.right p {
+	margin-bottom: 20px;
+}
+.links {
+	display: flex;
+	justify-content: space-between;
+}
+.links a {
+	border-radius: 100%;
+	border: 1px solid black;
+	width: 150px;
+	height: 150px;
+	background-color: orange;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 0.5s;
+	font-size: 1.5rem;
+	color: black;
+	text-decoration: none;
+}
+
+.links a.first {
+	background-color: #c9ada7;
+	color: white;
+}
+.links a.second {
+	background-color: #af89a9;
+	color: white;
+}
+.links a.third {
+	background-color: #df7a9c;
+	color: white;
+}
+.links a:hover {
+	background-color: rgb(255, 255, 255);
+	color: black;
+}
+@media (max-width: 1000px) {
+	.links a {
+		width: 120px;
+		height: 120px;
+		font-size: 0.95rem;
+	}
+}
+@media (max-width: 768px) {
+	main .wrapper {
+		display: block;
+		width: 100%;
+		padding: 0 20px;
+	}
+	main .wrapper .left,
+	main .wrapper .right {
+		width: 100%;
+		margin: 0;
+	}
+	main .wrapper .left {
+		width: 300px;
+		height: 300px;
+		display: flex;
+		margin: 0 auto;
+	}
+	main .wrapper .left img {
+		width: 50%;
+	}
+	main .wrapper .right h1 {
+		font-size: 3rem;
+		margin: 0;
+	}
+	main .wrapper .right h2 {
+		font-size: 2rem;
+		margin: 0;
+	}
+	main .wrapper .links {
+		justify-content: center;
+	}
+	main .wrapper .links a {
+		width: 120px;
+		height: 120px;
+		margin: 0;
+		font-size: 0.9rem;
+		margin: 0 20px;
+	}
+}
+
+@media (max-width: 500px) {
+	main .wrapper .links a {
+		width: 100px;
+		height: 100px;
+		font-size: 0.85rem;
+		margin: 0 15px;
+	}
+}
