@@ -31,7 +31,7 @@ main .wrapper {
 
 .left {
 	border-radius: 100%;
-	background: url(./images/hero.jpg);
+	background: url(./hero.jpg);
 	transition: 0.5s;
 	background-size: cover;
 	background-position: center;
@@ -43,7 +43,7 @@ main .wrapper {
 }
 .left:hover {
 	border-radius: 100%;
-	background: url(./images/brand-logo.jpg);
+	background: url(./brand-logo.jpg);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
